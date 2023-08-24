@@ -21,6 +21,8 @@
             return implode(" ",array_splice($words,0,$word_limit));
         }
     ?>
+       <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
     <style>
 .card {
   padding: 5rem;
@@ -115,6 +117,7 @@
 </section>
 
 <section class="clearfix about about-style2">
+<div class="tile">
 <div transition-style="in:square:bottom-right">
     <div class="container">
         <div class="row">
@@ -126,10 +129,12 @@
                 <img src="<?php echo base_url().'theme/images/icon1.png'?>" class="img-fluid about-img" alt="#">
             </div>
             </div>
+            </div>
 </section>
 
 
 <section class="testimonial">
+<div class="tile">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -173,9 +178,11 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
 <section class="clearfix about about-style1">
+<div class="tile">
 <div class="container">
         <div class="row">
             <div class="col-md-12" style="margin-bottom: 3rem;">
@@ -203,9 +210,11 @@
             </div>
         </div>
     </div>
+    </div>
 </section>
 
 <section class="our_courses">
+<div class="tile">
     <div class="container">
         <div class="row">
             <div class="col-md-12" style="text-align: center;">
@@ -233,9 +242,11 @@
             </div>
         </div>
     </div>
+    </div>
 </section>
 
 <section class="event">
+<div class="tile">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
@@ -275,10 +286,13 @@
             </div>
         </div>
     </div>
+    </div>
 </section>
 
 <footer>
+<div class="tile">
 <?php $this->load->view('depan/partial/footer');?>
+</div>
 </footer>
 
         <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>
@@ -292,6 +306,8 @@
         <script src="<?php echo base_url().'theme/js/tweetie.min.js'?>"></script>
         <script src="<?php echo base_url().'theme/js/subscribe.js'?>"></script>
         <script src="<?php echo base_url().'theme/js/script.js'?>"></script>
+        <script>ScrollReveal().reveal('.tile', { interval: 100, delay: 100 , reset: true });</script>
+
     </body>
 
     </html>
